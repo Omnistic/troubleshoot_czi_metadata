@@ -1,0 +1,17 @@
+[workspace]
+authors = ["David Nguyen <64271861+Omnistic@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "troubleshoot_czi_metadata"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+start = "python main.py"
+
+[dependencies]
+python = "3.12.*"
+plotly = ">=7.1.0,<8"
+
+[pypi-dependencies]
+bioio-czi = ">=3.0.1, <4"
+bioio = ">=3.5.1, <4"
